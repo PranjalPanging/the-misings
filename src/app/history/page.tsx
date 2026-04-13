@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import Migration from '@/components/history/Migration';
@@ -13,18 +12,24 @@ export const metadata: Metadata = {
 
 export default function HistoryPage() {
     return (
-        <main className="min-h-screen bg-[#0A0A0A] text-zinc-300 selection:bg-[#EAB308] selection:text-black">
-<Navbar />
-            <div className="max-w-6xl mx-auto px-6 pt-24 pb-12">
-                <header className="border-b border-zinc-800 pb-10">
+        <main className="min-h-screen bg-[#0D0B0A] text-zinc-300 selection:bg-[#FFB347] selection:text-black">
+            <Navbar />
+
+            <div className="max-w-6xl mx-auto px-6 pt-40 pb-20 md:pt-52">
+                <header className="relative">
+                    <div className="absolute -top-20 -left-20 w-64 h-64 bg-[#FFB347]/5 blur-[100px] pointer-events-none" />
+
                     <h1
-                        className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight"
+                        className="text-6xl md:text-8xl font-bold text-white mb-8 tracking-tighter"
                         style={{ fontFamily: 'Times New Roman, serif' }}
                     >
-                        History & <span className="text-[#EAB308]">Origins</span>
+                        History & <span className="text-[#FFB347]">Origins</span>
                     </h1>
+
+                    <div className="w-24 h-[1px] bg-[#FFB347]/40 mb-8" />
+
                     <p
-                        className="text-xl md:text-2xl text-zinc-500 max-w-2xl leading-relaxed italic"
+                        className="text-xl md:text-3xl text-zinc-500 max-w-3xl leading-relaxed italic font-light"
                         style={{ fontFamily: 'Cambria, serif' }}
                     >
                         A chronicle of the Mising Réngam—tracing our ancestral path from the
@@ -33,16 +38,22 @@ export default function HistoryPage() {
                 </header>
             </div>
 
-            <div className="max-w-6xl mx-auto px-6 pb-24 space-y-12">
+            <div className="max-w-6xl mx-auto px-6 pb-32 space-y-32">
 
-                <Migration />
+                <section id="migration">
+                    <Migration />
+                </section>
 
-                <div className="py-8">
+                <section id="etymology">
                     <Etymology />
-                </div>
+                </section>
 
-                <Timeline />
+                <section id="timeline">
+                    <Timeline />
+                </section>
+
             </div>
+
             <Footer />
         </main>
     );

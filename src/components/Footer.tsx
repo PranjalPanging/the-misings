@@ -33,7 +33,7 @@ const Footer = () => {
                             Navigation
                         </h4>
                         <nav className="flex flex-col space-y-4 text-[15px]">
-                            {['Folklore', 'Rituals', 'Traditional Dress', 'Migration', 'History'].map((item) => (
+                            {['Folklore', 'Rituals', 'Traditional Dress', 'History'].map((item) => (
                                 <Link
                                     key={item}
                                     href={`/${item.toLowerCase().replace(' ', '-')}`}
@@ -42,18 +42,6 @@ const Footer = () => {
                                     {item}
                                 </Link>
                             ))}
-                        </nav>
-                    </div>
-
-                    <div className="space-y-8">
-                        <h4 className="text-[#FFB347] font-bold uppercase tracking-[0.2em] text-[11px] border-b border-white/10 pb-2">
-                            Resources
-                        </h4>
-                        <nav className="flex flex-col space-y-4 text-[15px]">
-                            <Link href="/about" className="text-gray-300 hover:text-white transition-colors w-fit">About Us</Link>
-                            <Link href="/contribute" className="text-gray-300 hover:text-white transition-colors w-fit">Submit a Story</Link>
-                            <Link href="/faq" className="text-gray-300 hover:text-white transition-colors w-fit">FAQ</Link>
-                            <Link href="/contact" className="text-gray-300 hover:text-white transition-colors w-fit">Contact</Link>
                         </nav>
                     </div>
 

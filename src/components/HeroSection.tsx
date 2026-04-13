@@ -21,7 +21,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center bg-[#0D0B0A] overflow-hidden font-serif">
+        <section className="relative min-h-screen flex items-center justify-center bg-[#0D0B0A] overflow-hidden font-serif pt-32 pb-20">
 
             <div className="absolute inset-0 opacity-[0.06] pointer-events-none z-10"
                 style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3BaseFilter id='noiseFilter'%3BfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")` }}>
@@ -61,19 +61,19 @@ const Hero = () => {
 
             <div className="max-w-7xl mx-auto px-8 relative z-30 text-center">
                 <div className="mb-6">
-                    <p className="text-[#FFB347] text-[12px] md:text-[14px] uppercase tracking-[0.6em] font-bold">
+                    <p className="text-[#FFB347] text-[10px] md:text-[14px] uppercase tracking-[0.4em] md:tracking-[0.6em] font-bold leading-relaxed">
                         Riverine People of NorthEast India
                     </p>
                 </div>
 
-                <h1 className="text-5xl md:text-8xl font-bold text-white tracking-tighter mb-8 leading-[0.9]">
+                <h1 className="text-4xl md:text-8xl font-bold text-white tracking-tighter mb-8 leading-[1.1] md:leading-[0.9]">
                     THE SPIRIT OF <br />
                     <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/30">
                         THE RIVER PEOPLE
                     </span>
                 </h1>
 
-                <p className="max-w-2xl mx-auto text-gray-400 text-lg md:text-xl italic leading-relaxed mb-12 opacity-90 font-light px-4">
+                <p className="max-w-2xl mx-auto text-gray-400 text-base md:text-xl italic leading-relaxed mb-12 opacity-90 font-light px-4">
                     "Every weave a history, every song a current." <br className="hidden md:block" />
                     Enter the digital home of Mising culture, heritage, and the evolving life along the Brahmaputra.
                 </p>
@@ -81,13 +81,13 @@ const Hero = () => {
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6">
                     <Link
                         href="/folklore"
-                        className="px-10 py-4 bg-[#FFB347] text-black font-bold text-sm tracking-widest uppercase transition-all duration-500 hover:scale-105"
+                        className="w-full md:w-auto px-10 py-4 bg-[#FFB347] text-black font-bold text-sm tracking-widest uppercase transition-all duration-500 hover:scale-105"
                     >
                         Explore Traditions
                     </Link>
                     <Link
                         href="/gallery"
-                        className="px-10 py-4 border border-white/20 text-white font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-500"
+                        className="w-full md:w-auto px-10 py-4 border border-white/20 text-white font-bold text-sm tracking-widest uppercase hover:bg-white hover:text-black transition-all duration-500"
                     >
                         View Gallery
                     </Link>
