@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mising-red: #8B0000;
+  --font-serif: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --mising-red: #8B0000;
+  }
+
+  *, html, body, button, input, select, textarea {
+    font-family: var(--font-serif) !important;
+  }
+
+  body {
+    @apply antialiased transition-colors duration-300 leading-relaxed;
+    font-size: 1.15rem;
+    background-color: #F9F7F2;
+    color: #1a1a1a;
+  }
+
+  .dark body {
+    background-color: #050505;
+    color: #f0f0f0;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-tight;
+  }
+
+  ::selection {
+    background-color: var(--mising-red);
+    color: white;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 0px;
+  }
+}
