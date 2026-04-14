@@ -62,7 +62,7 @@ const Hero = () => {
             <div className="max-w-7xl mx-auto px-8 relative z-30 text-center">
                 <div className="mb-6">
                     <p className="text-[#FFB347] text-[10px] md:text-[14px] uppercase tracking-[0.4em] md:tracking-[0.6em] font-bold leading-relaxed">
-                        Riverine People of NorthEast India
+                        River People of NorthEast India
                     </p>
                 </div>
 

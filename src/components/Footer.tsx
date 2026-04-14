@@ -19,7 +19,7 @@ const Footer = () => {
                                 The Misings
                             </h2>
                             <p className="text-[#FFB347] text-sm italic mt-2 tracking-wide font-medium">
-                                Riverine people of NorthEast India
+                                River people of NorthEast India
                             </p>
                         </div>
                         <p className="text-gray-400 text-[15px] leading-relaxed max-w-xs italic opacity-85">
