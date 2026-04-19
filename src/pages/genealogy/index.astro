@@ -1,0 +1,38 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Genealogy Directory">
+  <section class="py-20 bg-slate-50 min-h-screen">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl font-serif font-bold text-blue-900 mb-6">Mising Genealogy</h1>
+      <p class="text-slate-600 mb-12">Select a lineage to explore the ancestral branches of the Tani people.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <a href="/genealogy/longging" class="group bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all">
+          <h2 class="text-2xl font-serif font-bold text-blue-900 group-hover:text-blue-600 transition-colors">
+            Longgíng Clan
+          </h2>
+          <p class="text-slate-500 mt-2 text-sm">Explore the primary ancestral branches of Longgíng.</p>
+          <span class="inline-block mt-4 text-blue-700 font-bold group-hover:translate-x-1 transition-transform">
+            View Tree →
+          </span>
+        </a>
+
+        <a href="/genealogy/doley" class="group bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:border-blue-600 hover:shadow-md transition-all">
+          <h2 class="text-2xl font-serif font-bold text-blue-900 group-hover:text-blue-600 transition-colors">
+            Doley Clan
+          </h2>
+          <p class="text-slate-500 mt-2 text-sm">Follow the patrilineal descent through the Tani line.</p>
+          <span class="inline-block mt-4 text-blue-700 font-bold group-hover:translate-x-1 transition-transform">
+            View Tree →
+          </span>
+        </a>
+
+        <div class="md:col-span-2 bg-slate-100 p-6 rounded-2xl border border-dashed border-slate-300 flex items-center justify-center">
+          <p class="text-slate-400 italic text-sm">Other ancestral lineages coming soon...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</MainLayout>

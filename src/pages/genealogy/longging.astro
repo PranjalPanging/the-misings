@@ -1,0 +1,37 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import LonggingTree from '../../components/genealogy/LonggingTree.astro';
+---
+
+<MainLayout title="Longgíng Clan Genealogy">
+  <section class="py-12 bg-white min-h-screen">
+    <div class="max-w-7xl mx-auto px-4">
+       <div class="mb-6">
+        <a 
+          href="/genealogy" 
+          class="text-sm font-bold text-slate-400 hover:text-red-600 transition-colors flex items-center gap-1"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to Genealogy Directory
+        </a>
+      </div>
+      
+      <div class="text-center mb-12">
+        <h1 class="text-5xl font-serif font-bold text-blue-900 mb-4">Longgíng Clan</h1>
+        <p class="text-slate-500 max-w-2xl mx-auto italic">
+          The complete ancestral lineage of the Longgíng group.
+        </p>
+        <div class="h-1 w-24 bg-red-600 mx-auto mt-6"></div>
+      </div>
+
+      <div class="overflow-x-auto pb-20 cursor-grab active:cursor-grabbing">
+        <div class="inline-block min-w-[1000px] w-full">
+          <LonggingTree />
+        </div>
+      </div>
+
+    </div>
+  </section>
+</MainLayout>
