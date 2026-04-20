@@ -1,0 +1,95 @@
+---
+const lineage = [
+  "Do:ni (Tani)", "Nibo", "Bomi", "Midong", "Dolo",
+  "Lonung", "Nuda", "Dayi", "Yike", "Kepang", "Papér"
+];
+---
+
+<div class="w-full overflow-x-auto bg-white">
+  <div class="flex flex-col items-center py-10 px-8 min-w-[520px] font-sans">
+    <div class="flex flex-col items-center">
+      {lineage.map((name, i, arr) => (
+        <div class="flex flex-col items-center">
+          <!-- pill box -->
+          <div class="px-6 py-1.5 border border-gray-400 rounded-full text-center text-sm font-medium bg-white min-w-[160px]">
+            {name}
+          </div>
+          {i < arr.length - 1 && (
+            <div class="flex flex-col items-center">
+              <div class="w-px h-5 bg-gray-400"></div>
+              <div class="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[7px] border-t-gray-400"></div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+
+    <div class="w-px h-6 bg-gray-400"></div>
+
+    <div class="relative flex w-[280px] justify-between">
+      <div class="absolute top-0 left-[56px] right-[48px] h-px bg-gray-400"></div>
+
+      <div class="flex flex-col items-center w-28">
+        <div class="w-px h-5 bg-gray-400"></div>
+        <div class="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[7px] border-t-gray-400"></div>
+        <div class="px-4 py-1.5 border border-gray-400 rounded-full text-center text-sm font-medium bg-[#fbe7a1] w-28">
+        Pértin
+        </div>
+        
+        <div class="w-px h-5 bg-gray-400"></div>
+        <div class="relative flex w-[248px] justify-between">
+          <div class="absolute top-0 left-[72px] right-[48px] h-px bg-gray-400"></div>
+
+          <div class="flex flex-col items-center w-36">
+            <div class="w-px h-5 bg-gray-400"></div>
+            <div class="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[7px] border-t-gray-400"></div>
+            <div class="px-3 py-1.5 border border-yellow-500 rounded-full text-center text-xs font-semibold bg-[#fbe7a1] w-36">
+              Tingling<br/><span class="text-[10px] font-normal">(Borang clan)</span>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center w-24">
+            <div class="w-px h-5 bg-gray-400"></div>
+            <div class="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[7px] border-t-gray-400"></div>
+            <div class="px-3 py-1.5 border border-gray-400 rounded-full text-center text-sm font-medium bg-white w-24">
+              Tinrang
+            </div>
+
+            <div class="w-px h-5 bg-gray-400"></div>
+            <div class="relative flex w-[248px] justify-between">
+              <div class="absolute top-0 left-[64px] right-[64px] h-px bg-gray-400"></div>
+
+              <div class="flex flex-col items-center w-32">
+                <div class="w-px h-5 bg-gray-400"></div>
+                <div class="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[7px] border-t-gray-400"></div>
+                <div class="px-3 py-1.5 border border-gray-400 rounded-full text-center text-xs font-medium bg-white w-32">
+                  Rapul<br/><span class="text-[10px] font-normal">(take Pertin as clan name)</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col items-center w-32">
+                <div class="w-px h-5 bg-gray-400"></div>
+                <div class="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[7px] border-t-gray-400"></div>
+                <div class="px-3 py-1.5 border border-yellow-500 rounded-full text-center text-xs font-semibold bg-[#fbe7a1] w-32">
+                  Ratan<br/><span class="text-[10px] font-normal">(Ratan clan)</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center w-24">
+        <div class="w-px h-5 bg-gray-400"></div>
+        <div class="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[7px] border-t-gray-400"></div>
+        <div class="px-4 py-1.5 border border-gray-400 rounded-full text-center text-sm font-medium bg-[#fbe7a1] w-24">
+          Pérme
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
